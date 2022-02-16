@@ -1,0 +1,76 @@
+Project 1: Math Functions
+
+API Endpoints:
+
+[POST] "localhost:5000/add" - for adding 2 numbers
+[POST] "localhost:5000/sub" - for substracting 2 numbers
+[POST] "localhost:5000/multiply" - for multiplying 2 numbers
+[POST] "localhost:5000/divide" - for dividing 2 numbers
+
+parameters={"A":<<float_value>>, 
+	    "B":<<float_value>>}
+
+-------------------------------------------------------------------------------
+===============================================================================
+-------------------------------------------------------------------------------
+
+Project 2: Text Data Storage 
+- this will store textual data in MongoDB sent by user.
+
+API Endpoints:
+
+[POST] "localhost:5000/register" - for registering user (password hashed and salted using bcrypt)
+
+parameters = {"username":<<enter_username>>,
+	      "password":<<enter_password>>}
+
+----------------------------------------------------------------
+
+[POST] "localhost:5000/store" - for storing the text data
+
+parameters = {"username":<<enter_username>>,
+	      "password":<<enter_password>>,
+	      "text_data":<<enter_text_data>>}
+
+----------------------------------------------------------------
+
+[POST] "localhost:5000/retrieve" - for retrieving the text data
+
+parameters = {"username":<<enter_username>>,
+	      "password":<<enter_password>>}
+
+-------------------------------------------------------------------------------
+===============================================================================
+-------------------------------------------------------------------------------
+
+Project 3: Detecting Text Similarity - this API will detect the similarity of
+	   the 2 texts entered using NLP spacy library.
+
+API Endpoints:
+
+[POST] "localhost:5000/register" 
+- for registering user (password hashed and salted using bcrypt)
+
+parameters = {"username":<<enter_username>>,
+	      "password":<<enter_password>>}
+
+----------------------------------------------------------------
+
+[POST] "localhost:5000/check" 
+- for checking the similarity of the 2 text inputs
+
+parameters = {"username":<<enter_username>>,
+	      "password":<<enter_password>>,
+	      "text_1":<<enter_first_text_data>>,
+	      "text_2":<<enter_second_text_data>>}
+
+----------------------------------------------------------------
+
+[POST] "localhost:5000/refill" 
+- this will refill the user token
+
+parameters = {"username":<<enter_username>>,
+	      "password":<<enter_password>>,
+	      "refill":<<enter_refill_amount>>}
+
+
